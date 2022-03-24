@@ -1,104 +1,306 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>ligatura</title>
-    <meta name="theme-color" content="#fff">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="description" content="#{title}">
-    <meta name="keywords" content="#{title}">
-    <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
-    <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
-    <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
-    <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
-    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
-    <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
-    <link rel="preload" href="/fonts/opensans/subset-OpenSans-Regular.woff2" as="font" crossorigin>
-    <link rel="preload" href="/fonts/opensans/subset-OpenSans-SemiBold.woff2" as="font" crossorigin>
-    <link rel="preload" href="/fonts/caveat/caveat.woff2" as="font" crossorigin>
-    <link rel="prefetch" href="/img/sprites/sprite.svg" as="image" crossorigin>
-    <link rel="stylesheet" href="../styles/main.css">
-  </head>
-  <body class="perf-no-animation">
-    <header>
-      <div class="container">
-        <div class="header">
-          <div class="header__logo">
-            <div class="header__logo-image"><a href="//ligatura.by"><span class="bgimage" style="background-image: url(/img/common/logo.svg)"></span></a></div>
-            <div class="header__logo-text"><span>оптовые продажи  по безналичному расчету</span></div>
-          </div>
-          <div class="header__address">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>ligatura</title>
+  <meta name="theme-color" content="#fff">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="description" content="#{title}">
+  <meta name="keywords" content="#{title}">
+  <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+  <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+  <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+  <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+  <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+  <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+  <link rel="preload" href="/fonts/opensans/subset-OpenSans-Regular.woff2" as="font" crossorigin>
+  <link rel="preload" href="/fonts/opensans/subset-OpenSans-SemiBold.woff2" as="font" crossorigin>
+  <link rel="preload" href="/fonts/caveat/caveat.woff2" as="font" crossorigin>
+  <link rel="prefetch" href="/img/sprites/sprite.svg" as="image" crossorigin>
+  <link rel="stylesheet" href="../styles/main.css">
+</head>
+
+<body class="perf-no-animation">
+  <header>
+    <div class="container">
+      <div class="header">
+        <div class="header__logo">
+          <div class="header__logo-image"><a href="//ligatura.by"><span class="bgimage"
+                style="background-image: url(/img/common/logo.svg)"></span></a></div>
+          <div class="header__logo-text"><span>оптовые продажи по безналичному расчету</span></div>
+        </div>
+        <div class="header__address">
+          <svg width="24" height="24">
+            <use xlink:href="/img/sprites/sprite.svg#ic_pin"></use>
+          </svg><a href="https://goo.gl/maps/GctCBrXofTdcUNsa8">
+            <address>Минск, ул. Амураторская 4Б</address>
+          </a>
+        </div>
+        <div class="header__worktime">
+          <svg width="24" height="24">
+            <use xlink:href="/img/sprites/sprite.svg#ic_watch"></use>
+          </svg><span>пн-пт 9:00-18:00</span>
+        </div>
+        <div class="header__phone">
+          <svg width="24" height="24">
+            <use xlink:href="/img/sprites/sprite.svg#ic_phone"></use>
+          </svg>
+          <ul>
+            <li><a href="tel:375172708375">+375(17)270-83-75</a></li>
+            <li><a href="tel:375293512017">+375(29)351-20-17</a></li>
+          </ul>
+        </div>
+        <div class="header__callback" data-modal-open="callback"><a href="#">
             <svg width="24" height="24">
-              <use xlink:href="/img/sprites/sprite.svg#ic_pin"></use>
-            </svg><a href="https://goo.gl/maps/GctCBrXofTdcUNsa8">
-              <address>Минск, ул. Амураторская 4Б</address></a>
-          </div>
-          <div class="header__worktime">
-            <svg width="24" height="24">
-              <use xlink:href="/img/sprites/sprite.svg#ic_watch"></use>
-            </svg><span>пн-пт 9:00-18:00</span>
-          </div>
-          <div class="header__phone">
-            <svg width="24" height="24">
-              <use xlink:href="/img/sprites/sprite.svg#ic_phone"></use>
-            </svg>
-            <ul>
-              <li><a href="tel:375172708375">+375(17)270-83-75</a></li>
-              <li><a href="tel:375293512017">+375(29)351-20-17</a></li>
+              <use xlink:href="/img/sprites/sprite.svg#ic_call"></use>
+            </svg><span><small>Заказать</small>звонок</span></a></div>
+        <div class="header__burger"><span></span><span></span><span></span></div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="section-main-slider">
+      <div class="main-slider">
+        <div class="glide" data-glide="fb">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <li class="glide__slide">
+                <div class="main-slider__slide">
+
+
+                  <picture>
+                    <source srcset="/img/common/BANNER_2022.webp" type="image/webp" media="(min-width: 992px)">
+                    <source srcset="/img/common/BANNER_2022.jpg" type="image/jpeg" media="(min-width: 992px)">
+                    <source srcset="/img/common/BANNER_2022_760.webp" type="image/webp">
+                    <img src="/img/common/BANNER_2022_760.jpg" alt="Image">
+                  </picture>
+                </div>
+              </li>
             </ul>
           </div>
-          <div class="header__callback" data-modal-open="callback"><a href="#">
-              <svg width="24" height="24">
-                <use xlink:href="/img/sprites/sprite.svg#ic_call"></use>
-              </svg><span><small>Заказать</small>звонок</span></a></div>
-          <div class="header__burger"><span></span><span></span><span></span></div>
-        </div>
-      </div>
-    </header>
-    <main>
-      <section class="section-main-slider">
-        <div class="main-slider">
-          <div class="glide" data-glide="fb">
-            <div class="glide__track" data-glide-el="track">
-              <ul class="glide__slides">
-                <li class="glide__slide">
-                  <div class="main-slider__slide">
-                    
-
-                    <picture>
-                      <source srcset="/img/common/BANNER_2022.webp" type="image/webp" media="(min-width: 992px)">
-                      <source srcset="/img/common/BANNER_2022.jpg" type="image/jpeg" media="(min-width: 992px)">
-                      <source srcset="/img/common/BANNER_2022_760.webp" type="image/webp">
-                      <img src="/img/common/BANNER_2022_760.jpg" alt="Image">
-                    </picture>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="main-slider__nav" data-glide-el="controls">
-              <button class="main-slider__prev" data-glide-dir="&lt;"><span>‹</span></button>
-              <button class="main-slider__next" data-glide-dir="&gt;"><span>›</span></button>
-            </div>
+          <div class="main-slider__nav" data-glide-el="controls">
+            <button class="main-slider__prev" data-glide-dir="&lt;"><span>‹</span></button>
+            <button class="main-slider__next" data-glide-dir="&gt;"><span>›</span></button>
           </div>
         </div>
-      </section>
-      <section class="section-nav-menu">
-        <div class="nav-main">
-          <div class="container">
-            <nav>
+      </div>
+    </section>
+    <section class="section-nav-menu">
+      <div class="nav-main">
+        <div class="container">
+          <nav>
+            <ul>
+              <li><a href="https://ligatura.by/suveniry">сувениры</a></li>
+              <li><a href="https://ligatura.by/proizvodstvo">производство</a></li>
+              <li><a href="https://ligatura.by/portfolio">портфолио</a></li>
+              <li><a href="https://ligatura.by/kak-kupit">как купить</a></li>
+              <li><a href="https://ligatura.by/otzivy">отзывы</a></li>
+              <li><a href="https://ligatura.by/contakty">контакты</a></li>
+            </ul>
+
+            <span class="close-mobile-menu">+</span>
+
+          </nav>
+        </div>
+      </div>
+    </section>
+    <section class="section-calculator">
+      <div class="container">
+        <div class="calculator" id="calculator" v-cloak>
+          <div class="calculator__main">
+            <div class="calculator__title">Калькулятор <br> стоимости</div>
+            <div class="calculator__param">
+              <div class="param-calculator">
+                <!-- материал пакета -->
+                <div class="param-calculator__title">Материал пакета:</div>
+                <div class="param-calculator__props">
+                  <label>
+                    <input type="radio" value="pvd" name="types" v-model="PACK_TYPE" />
+                    <div class="checkbox-image">
+                      <div class="checkbox-image__image">
+                        <picture>
+                          <source srcset="/img/common/pvd-image.webp" type="image/webp" /><img
+                            src="/img/common/pvd-image.png" loading="lazy" alt="image" />
+                        </picture>
+                      </div>
+                      <div class="checkbox-image__title">ПВД</div>
+
+                    </div>
+                  </label>
+                  <label>
+                    <input type="radio" value="craft" name="types" v-model="PACK_TYPE" />
+                    <div class="checkbox-image">
+                      <div class="checkbox-image__image">
+                        <picture>
+                          <source srcset="/img/common/craft-image.webp" type="image/webp" /><img
+                            src="/img/common/craft-image.png" loading="lazy" alt="image" />
+                        </picture>
+                      </div>
+                      <div class="checkbox-image__title">Крафт с кручеными ручками</div>
+
+                    </div>
+                  </label>
+                </div>
+                <div class="param-calculator__desc">
+                  <p v-for="text in PARAMS.type[PACK_TYPE].desc">{{text}}</p>
+                </div>
+              </div>
+            </div>
+            <div class="calculator__param">
+              <!-- Размер -->
+              <div class="param-calculator">
+                <div class="param-calculator__title">Размер пакета,см:</div>
+
+                <transition-group class="param-calculator__props" name="list" tag="div">
+                  <label v-for="(size, index) in getSize()" :key="size.title">
+                    <input type="radio" :value="size.title" name="size" v-model="PACK_SIZE" />
+                    <div class="radio-prop">
+                      <div class="radio-prop__text">{{size.title}}</div>
+                      <div class="radio-prop__elem"></div>
+                    </div>
+                  </label>
+                </transition-group>
+
+
+              </div>
+            </div>
+            <div class="calculator__param">
+              <div class="param-calculator param-calculator--color">
+                <div class="param-calculator__title">Цвет пакета:</div>
+                <transition-group class="param-calculator__props" name="list" tag="div">
+
+                  <label v-for="color in getColor()" :key="color.title">
+                    <input type="radio" :value="color.title" name="color" @change="changePrice('color', color.price)"
+                      v-model="PACK_COLOR" />
+                    <div class="radio-prop">
+                      <div class="radio-prop__color" :style="{background: color.hex }"></div>
+                      <div class="radio-prop__text">{{color.title}}</div>
+                      <div class="radio-prop__elem"></div>
+                    </div>
+                  </label>
+
+                </transition-group>
+              </div>
+            </div>
+            <div class="calculator__param">
+              <div class="param-calculator">
+                <div class="param-calculator__title">Красочность пакета:</div>
+                <transition-group class="param-calculator__props" name="list" tag="div">
+
+                  <label v-for="(item, key) in getColorfulness()" :key="key">
+                    <input type="radio" :value="key" name="colorit" @change="changePrice('colorful', item)"
+                      v-model="PACK_COLORFUL" />
+                    <div class="radio-prop">
+                      <div class="radio-prop__text">{{key}}</div>
+                      <div class="radio-prop__elem"></div>
+                    </div>
+                  </label>
+
+                </transition-group>
+              </div>
+            </div>
+            <div class="calculator__param">
+              <div class="param-calculator">
+                <div class="param-calculator__title">Тираж ({{PACK_COUNT}} шт.) </div>
+                <div class="param-calculator__props">
+                  <div class="param-calculator__input">
+                    <input type="text" value="50" v-maska="'####'" placeholder="Тираж от 50 до 2000"
+                      @keyup="getCount($event.target.value)" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="calculator__aside">
+            <form data-form="result" action="/mail/handler.php" method="POST">
+              <div class="calculator-result">
+                <div class="calculator-result__title">Стоимость</div>
+                <div class="calculator-result__desc">
+                  <ul>
+                    <li v-for="item in getResultDesc()">
+                      <span>{{item.name}}</span>
+                      <span>{{item.value}}</span>
+                    </li>
+                  </ul>
+                </div>
+                <div v-if="!ERROR_LOG" class="calculator-result__cost">{{getTotalPrice()}} BYN</div>
+                <div v-if="ERROR_LOG" class="calculator-result__err">{{ERROR_LOG}}</div>
+                <div class="calculator-result__form">
+
+                  <div class="form">
+                    <div class="form__item">
+                      <div class="form__subitem">
+                        <input type="text" name="user-name" placeholder="Ваше имя" />
+                      </div>
+                    </div>
+                    <div class="form__item">
+                      <div class="form__subitem">
+                        <input type="email" name="user-email" placeholder="Email" />
+                      </div>
+                    </div>
+                    <div class="form__item">
+                      <div class="form__subitem">
+                        <input type="tel" name="user-phone" v-maska="'+375(##)###-##-##'"
+                          placeholder="+375(___)-___-__-__" />
+                        <input type="hidden" name="user-order" :value="JSON.stringify(getResultDesc())" />
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="calculator-result__status" data-form="status"></div>
+                <div class="calculator-result__submit">
+                  <button type="submit">Заказать</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container">
+      <div class="footer">
+        <div class="footer__content">
+          <div class="footer__social">
+            <ul>
+              <li><a href="https://www.facebook.com/ligatura.by/">
+                  <svg width="25" height="25">
+                    <use xlink:href="/img/sprites/sprite.svg#ic_fb"></use>
+                  </svg></a></li>
+              <li><a href="https://vk.com/public181470939">
+                  <svg width="25" height="25">
+                    <use xlink:href="/img/sprites/sprite.svg#ic_vk"></use>
+                  </svg></a></li>
+              <li><a href="https://www.instagram.com/ligatura.by/">
+                  <svg width="25" height="25">
+                    <use xlink:href="/img/sprites/sprite.svg#ic_ig"></use>
+                  </svg></a></li>
+            </ul><span>Следите за нами в социальных сетях</span>
+          </div>
+          <div class="footer__sl">
+            <div class="footer-sl__image"><span class="bgimage"
+                style="background-image: url(/img/common/All_you_need_footer.svg)"></span>
+            </div>
+          </div>
+          <div class="footer__right">
+            <div class="footer__menu">
               <ul>
                 <li><a href="https://ligatura.by/suveniry">сувениры</a></li>
                 <li><a href="https://ligatura.by/proizvodstvo">производство</a></li>
@@ -107,264 +309,79 @@
                 <li><a href="https://ligatura.by/otzivy">отзывы</a></li>
                 <li><a href="https://ligatura.by/contakty">контакты</a></li>
               </ul>
-
-              <span class="close-mobile-menu" >+</span>
-
-            </nav>
-          </div>
-        </div>
-      </section>
-      <section class="section-calculator">
-        <div class="container">
-          <div class="calculator" id="calculator" v-cloak>
-            <div class="calculator__main">
-              <div class="calculator__title">Калькулятор <br> стоимости</div>
-              <div class="calculator__param">
-                <div class="param-calculator"> <!-- материал пакета -->
-                  <div class="param-calculator__title">Материал пакета:</div>
-                  <div class="param-calculator__props">
-                    <label>
-                      <input type="radio" value="pvd" name="types" v-model="PACK_TYPE" />
-                      <div class="checkbox-image">
-                        <div class="checkbox-image__image">
-                          <picture>
-                            <source srcset="/img/common/pvd-image.webp" type="image/webp"/><img src="/img/common/pvd-image.png" loading="lazy" alt="image"/>
-                          </picture>
-                        </div>
-                        <div class="checkbox-image__title">ПВД</div>
-                         
-                      </div>
-                    </label>
-                    <label>
-                      <input type="radio" value="craft" name="types" v-model="PACK_TYPE"  />
-                      <div class="checkbox-image">
-                        <div class="checkbox-image__image">
-                          <picture>
-                            <source srcset="/img/common/craft-image.webp" type="image/webp"/><img src="/img/common/craft-image.png" loading="lazy" alt="image"/>
-                          </picture>
-                        </div>
-                        <div class="checkbox-image__title">Крафт с кручеными ручками</div>
-                        
-                      </div>
-                    </label>
-                  </div>
-                  <div class="param-calculator__desc">
-                    <p v-for="text in PARAMS.type[PACK_TYPE].desc" >{{text}}</p>
-                  </div>
-                </div>
-              </div>
-              <div class="calculator__param"> <!-- Размер -->
-                <div class="param-calculator">
-                  <div class="param-calculator__title">Размер пакета,см:</div>
-                   
-                    <transition-group class="param-calculator__props" name="list" tag="div" >
-                    <label v-for="(size, index) in getSize()" :key="size.title" >
-                      <input type="radio" :value="size.title" name="size" v-model="PACK_SIZE" />
-                      <div class="radio-prop">
-                        <div class="radio-prop__text">{{size.title}}</div>
-                        <div class="radio-prop__elem"></div>
-                      </div>
-                    </label>
-                  </transition-group>
-                    
-                   
-                </div>
-              </div>
-              <div class="calculator__param">
-                <div class="param-calculator param-calculator--color">
-                  <div class="param-calculator__title">Цвет пакета:</div>
-                  <transition-group class="param-calculator__props" name="list" tag="div" >
-
-                    <label v-for="color in getColor()" :key="color.title" >
-                      <input type="radio" :value="color.title" name="color" @change="changePrice('color', color.price)" v-model="PACK_COLOR"/>
-                      <div class="radio-prop">
-                        <div class="radio-prop__color" :style="{background: color.hex }"></div>
-                        <div class="radio-prop__text">{{color.title}}</div>
-                        <div class="radio-prop__elem"></div>
-                      </div>
-                    </label>
-                   
-                  </transition-group>
-                </div>
-              </div>
-              <div class="calculator__param">
-                <div class="param-calculator">
-                  <div class="param-calculator__title">Красочность пакета:</div>
-                  <transition-group class="param-calculator__props" name="list" tag="div" >
-
-                    <label v-for="(item, key) in getColorfulness()" :key="key">
-                      <input type="radio" :value="key" name="colorit" @change="changePrice('colorful', item)" v-model="PACK_COLORFUL"/>
-                      <div class="radio-prop">
-                        <div class="radio-prop__text">{{key}}</div>
-                        <div class="radio-prop__elem"></div>
-                      </div>
-                    </label>
-                    
-                  </transition-group>
-                </div>
-              </div>
-              <div class="calculator__param">
-                <div class="param-calculator">
-                  <div class="param-calculator__title">Тираж ({{PACK_COUNT}} шт.) </div>
-                  <div class="param-calculator__props">
-                    <div class="param-calculator__input">
-                      <input type="text" value="50" v-maska="'####'" placeholder="Тираж от 50 до 2000" @keyup="getCount($event.target.value)"/>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
-            <div class="calculator__aside">
-              <form data-form="result" action="#" method="POST">
-                <div class="calculator-result">
-                  <div class="calculator-result__title">Стоимость</div>
-                  <div class="calculator-result__desc">
-                    <ul>
-                      <li v-for="item in getResultDesc()" >
-                        <span>{{item.name}}</span>
-                        <span>{{item.value}}</span>
-                      </li>
-                    </ul>
-                  </div>
-                  <div v-if="!ERROR_LOG" class="calculator-result__cost">{{getTotalPrice()}} BYN</div>
-                  <div v-if="ERROR_LOG" class="calculator-result__err">{{ERROR_LOG}}</div>
-                  <div class="calculator-result__form">
-                     
-                      <div class="form">
-                        <div class="form__item">
-                          <div class="form__subitem">
-                            <input type="text" name="user-name" placeholder="Ваше имя"/>
-                          </div>
-                        </div>
-                        <div class="form__item">
-                          <div class="form__subitem">
-                            <input type="email" name="user-email" placeholder="Email"/>
-                          </div>
-                        </div>
-                        <div class="form__item">
-                          <div class="form__subitem">
-                            <input type="tel" name="user-phone" v-maska="'+375(##)###-##-##'" placeholder="+375(___)-___-__-__"/>
-                            <input type="hidden" name="user-order" :value="JSON.stringify(getResultDesc())" />
-                          </div>
-                        </div>
-                      </div>
-                     
-                  </div>
-                  <div class="calculator-result__status" data-form="status"></div>
-                  <div class="calculator-result__submit">
-                    <button type="submit">Заказать</button>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer>
-      <div class="container">
-        <div class="footer">
-          <div class="footer__content">
-            <div class="footer__social">
-              <ul>
-                <li><a href="https://www.facebook.com/ligatura.by/">
-                    <svg width="25" height="25">
-                      <use xlink:href="/img/sprites/sprite.svg#ic_fb"></use>
-                    </svg></a></li>
-                <li><a href="https://vk.com/public181470939">
-                    <svg width="25" height="25">
-                      <use xlink:href="/img/sprites/sprite.svg#ic_vk"></use>
-                    </svg></a></li>
-                <li><a href="https://www.instagram.com/ligatura.by/">
-                    <svg width="25" height="25">
-                      <use xlink:href="/img/sprites/sprite.svg#ic_ig"></use>
-                    </svg></a></li>
-              </ul><span>Следите за нами в социальных сетях</span>
-            </div>
-            <div class="footer__sl">
-              <div class="footer-sl__image"><span class="bgimage" style="background-image: url(/img/common/All_you_need_footer.svg)"></span>
-              </div>
-            </div>
-            <div class="footer__right">
-              <div class="footer__menu">
+            <div class="footer__contact">
+              <div class="footer__phone">
+                <svg width="24" height="24">
+                  <use xlink:href="/img/sprites/sprite.svg#ic_phone"></use>
+                </svg>
                 <ul>
-                  <li><a href="https://ligatura.by/suveniry">сувениры</a></li>
-                  <li><a href="https://ligatura.by/proizvodstvo">производство</a></li>
-                  <li><a href="https://ligatura.by/portfolio">портфолио</a></li>
-                  <li><a href="https://ligatura.by/kak-kupit">как купить</a></li>
-                  <li><a href="https://ligatura.by/otzivy">отзывы</a></li>
-                  <li><a href="https://ligatura.by/contakty">контакты</a></li>
+                  <li><a href="375172708375">+375(17)270-83-75</a></li>
+                  <li><a href="375293512017">+375(29)351-20-17</a></li>
                 </ul>
               </div>
-              <div class="footer__contact">
-                <div class="footer__phone">
-                  <svg width="24" height="24">
-                    <use xlink:href="/img/sprites/sprite.svg#ic_phone"></use>
-                  </svg>
-                  <ul>
-                    <li><a href="375172708375">+375(17)270-83-75</a></li>
-                    <li><a href="375293512017">+375(29)351-20-17</a></li>
-                  </ul>
-                </div>
-                <div class="footer__address">
-                  <svg width="24" height="24">
-                    <use xlink:href="/img/sprites/sprite.svg#ic_pin"></use>
-                  </svg><a href="https://goo.gl/maps/GctCBrXofTdcUNsa8">
-                    <address>Минск, ул. Амураторская 4Б</address></a>
-                </div>
-                <div class="footer__worktime">
-                  <svg width="24" height="24">
-                    <use xlink:href="/img/sprites/sprite.svg#ic_watch"></use>
-                  </svg><span>пн-пт 9:00-18:00</span>
-                </div>
+              <div class="footer__address">
+                <svg width="24" height="24">
+                  <use xlink:href="/img/sprites/sprite.svg#ic_pin"></use>
+                </svg><a href="https://goo.gl/maps/GctCBrXofTdcUNsa8">
+                  <address>Минск, ул. Амураторская 4Б</address>
+                </a>
+              </div>
+              <div class="footer__worktime">
+                <svg width="24" height="24">
+                  <use xlink:href="/img/sprites/sprite.svg#ic_watch"></use>
+                </svg><span>пн-пт 9:00-18:00</span>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="footer-sl">
-        <div class="footer-sl__image"><span class="bgimage" style="background-image: url(/img/common/All_you_need_footer.svg)"></span>
-        </div>
-      </div>
-    </footer>
-
-    <div class="modal-callback">
-      <div class="modal-callback__wrp">
-        <div class="modal-callback__close">+</div>
-        <div class="modal-callback__content">
-          <form action="#" data-form="callback" method="POST">
-            <div class="modal-callback__title">Заказ обратного звонка</div>
-            <div class="modal-callback__subtitle">Оставьте свой телефон и мы перезвоним в кратчайшие сроки!</div>
-            <div class="modal-callback__form">
-                <div class="form">
-                  <div class="form__item">
-                    <div class="form__subitem">
-                      <input type="text" name="user-name" placeholder="Ваше имя"/>
-                    </div>
-                  </div>
-                  
-                  <div class="form__item">
-                    <div class="form__subitem">
-                      <input type="tel" name="user-phone" data-mask='+375(##)###-##-##' placeholder="+375(___)-___-__-__"/>
-                    </div>
-                  </div>
-                </div>
-              
-            </div>
-            <div class="modal-callback__status" data-form="status"></div>
-            <div class="modal-callback__submit">
-              <button type="submit">Заказать</button>
-            </div>
-        </form>
         </div>
       </div>
     </div>
+    <div class="footer-sl">
+      <div class="footer-sl__image"><span class="bgimage"
+          style="background-image: url(/img/common/All_you_need_footer.svg)"></span>
+      </div>
+    </div>
+  </footer>
 
-    <script src="/js/lib/vue.dev.js"> </script>
-    <script src="/js/lib/maska.js"> </script>
-    <script src="/js/page/params.js"> </script>
-    <script src="/js/page/calc.js"> </script>
-    <script src="/js/page/common.js"> </script>
+  <div class="modal-callback">
+    <div class="modal-callback__wrp">
+      <div class="modal-callback__close">+</div>
+      <div class="modal-callback__content">
+        <form action="/mail/handler.php" data-form="callback" method="POST">
+          <div class="modal-callback__title">Заказ обратного звонка</div>
+          <div class="modal-callback__subtitle">Оставьте свой телефон и мы перезвоним в кратчайшие сроки!</div>
+          <div class="modal-callback__form">
+            <div class="form">
+              <div class="form__item">
+                <div class="form__subitem">
+                  <input type="text" name="user-name" placeholder="Ваше имя" />
+                </div>
+              </div>
 
-  </body>
+              <div class="form__item">
+                <div class="form__subitem">
+                  <input type="tel" name="user-phone" data-mask='+375(##)###-##-##' placeholder="+375(___)-___-__-__" />
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="modal-callback__status" data-form="status"></div>
+          <div class="modal-callback__submit">
+            <button type="submit">Заказать</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="/js/lib/vue.dev.js"> </script>
+  <script src="/js/lib/maska.js"> </script>
+  <script src="/js/page/params.js"> </script>
+  <script src="/js/page/calc.js"> </script>
+  <script src="/js/page/common.js"> </script>
+
+</body>
+
 </html>
