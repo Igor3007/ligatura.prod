@@ -1,6 +1,6 @@
 <?php
 
-$admin_email = 'info@ligatura.by';
+$admin_email = 'info@ligatura.by, dok307@gmail.com';
 $form_subject = 'Новая заявка на сайте - paket.ligatura.by';
 $project_name = 'paket.ligatura.by';
 $from = 'no-reply@ligatura.by';
@@ -32,17 +32,21 @@ foreach ($dataForm as $key => $value) {
     }
 }
 
-$message .="<tr><td style='padding: 10px;'><b>Детали заказа</b></td><td style='padding: 10px;'></td></tr>";
+if(isset($dataForm['user-order'])){
 
-foreach ($orderArray as $key => $value) {
-    if ($value != "" && $key != "user-order") {
-        $message .= "
-        " . (($c = !$c) ? '<tr>' : '<tr style="background-color: #f8f8f8;">') . "
-            <td style='padding: 10px; border: #e9e9e9 1px solid;'><b>".$value['name']."</b></td>
-            <td style='padding: 10px; border: #e9e9e9 1px solid;'>".$value['value']."</td>
-        </tr>
-        ";
+    $message .="<tr><td style='padding: 10px;'><b>Детали заказа</b></td><td style='padding: 10px;'></td></tr>";
+
+    foreach ($orderArray as $key => $value) {
+        if ($value != "" && $key != "user-order") {
+            $message .= "
+            " . (($c = !$c) ? '<tr>' : '<tr style="background-color: #f8f8f8;">') . "
+                <td style='padding: 10px; border: #e9e9e9 1px solid;'><b>".$value['name']."</b></td>
+                <td style='padding: 10px; border: #e9e9e9 1px solid;'>".$value['value']."</td>
+            </tr>
+            ";
+        }
     }
+    
 }
 
 $message = "<table style='width: 100%;'>$message</table>";
