@@ -240,7 +240,8 @@
                     </li>
                   </ul>
                 </div>
-                <div v-if="!ERROR_LOG" class="calculator-result__cost">{{getTotalPrice()}} BYN</div>
+                <div v-if="!ERROR_LOG" class="calculator-result__cost">{{getTotalPrice()}} BYN <span
+                    class="pcice-nds">(с НДС)</span></div>
                 <div v-if="ERROR_LOG" class="calculator-result__err">{{ERROR_LOG}}</div>
                 <div class="calculator-result__form">
 
@@ -378,13 +379,24 @@
     </div>
   </div>
 
-  <link rel="stylesheet" href="../styles/main.css">
+  <link rel="stylesheet" href="../styles/page.css?ver=1.1">
 
   <script src="/js/lib/vue.dev.js"> </script>
   <script src="/js/lib/maska.js"> </script>
   <script src="/js/page/params.min.js"> </script>
   <script src="/js/page/calc.min.js"> </script>
   <script src="/js/page/common.min.js"> </script>
+
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-TVKV33J');</script>
+  <!-- End Google Tag Manager -->
 
 </body>
 
